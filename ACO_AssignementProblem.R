@@ -129,14 +129,11 @@ Generate=function(M=list(list(0,1/3,1/3,1/3),list(0,0,1/2,1/2),list(0,1/2,0,1/2)
 				{	
 					NN[[i]][[pnew]]=0
 				}
-			}
-			for (i in seq(length(NN)))
-			{
-				if (i!=pnew)
-				{
-					NN[[p]][[i]]=0
-					NN[[p]]=Normalize(NN[[p]])[[1]]
-				}
+			  if (i!=pnew)
+			  {
+			    NN[[p]][[i]]=0
+			    NN[[p]]=Normalize(NN[[p]])[[1]]
+			  }
 			}
 			p=pnew
 			n=n+1		
